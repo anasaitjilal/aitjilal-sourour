@@ -3,12 +3,13 @@
 
     <persistence-unit name="Main">
         <properties>
-            <property name="hibernate.connection.driver_class" value="com.mysql.jdbc.Driver"/>
-            <property name="hibernate.connection.url" value="jdbc:mysql://localhost/timetableDB?createDatabaseIfNotExist=true"/>
-            <property name="hibernate.connection.username" value="root"/>
-            <property name="hibernate.connection.password" value=""/>
-            <property name="hibernate.dialect" value="org.hibernate.dialect.MySQLDialect"/>
-            <property name="hibernate.hbm2ddl.auto" value="update"/>
+            <property name="jakarta.persistence.jdbc.driver" value="org.postgresql.Driver" />
+            <property name="jakarta.persistence.jdbc.url" value="jdbc:postgres://ec2-34-201-95-176.compute-1.amazonaws.com:5432/ddpct7io5m97oq" />
+            <property name="jakarta.persistence.jdbc.user" value="ucqwtmdkmvjfgp" />
+            <property name="jakarta.persistence.jdbc.password" value="24196885a695160548bd1b5fd7b020fbce708f22e769a9d01caeb8f7368a9aad" />
+
+            <property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQL95Dialect"/>
+            <property name="hibernate.hbm2ddl.auto" value="create"/>
         </properties>
     </persistence-unit>
 

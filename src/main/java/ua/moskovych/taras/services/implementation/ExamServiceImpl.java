@@ -86,6 +86,8 @@ public class ExamServiceImpl implements ExamService {
 
 
         List<Exam> users = findByTeacherId(id);
+        //
+        //
         // adding table rows
 
 
@@ -147,7 +149,7 @@ public class ExamServiceImpl implements ExamService {
 
 
 
-
+            Paragraph paragraph22 = new Paragraph("La date:+ " + i.getDate().toString());
             Paragraph paragraph2 = new Paragraph("La salle:+ " + salle);
             Paragraph paragraph3 = new Paragraph("Sujet d'examination:+ " + sujet);
             Paragraph paragraph4 = new Paragraph("Surveillé par + " + teacherName + "   "+"Signature :");
@@ -161,7 +163,7 @@ public class ExamServiceImpl implements ExamService {
             document.add(paragraph);
 
             document.add(paragraphe);
-
+            document.add(paragraph22);
             document.add(paragraph2);
             document.add(paragraph3);
 
